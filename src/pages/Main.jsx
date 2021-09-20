@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import Common from "./Common.jsx"
 import Navbar from "../components/Navbar.jsx"
 import Footer from "../components/Footer.jsx"
-import HighLights from "../components/HighLights.jsx"
+import HighLights from "../components/Highlights"
 import { useHistory } from "react-router"
 import { Link } from "react-router-dom"
 const Main = (props) => {

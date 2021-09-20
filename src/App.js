@@ -1,5 +1,6 @@
-import React, {useEffect} from "react"
+import React from "react"
 import Gallery from "./pages/Gallery";
+// import Main from "./pages/Main";
 import Tagged from "./pages/Tagged";
 import Posts from "./pages/Posts";
 import Comments from "./pages/Comments";
@@ -8,8 +9,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 
 function App() {
-
- 
 
   return (
         <BrowserRouter>

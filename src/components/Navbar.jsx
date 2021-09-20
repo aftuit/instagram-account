@@ -1,37 +1,19 @@
-import React, {useState} from "react"
-import {Modal} from "reactstrap";
-export const Navbar = () => {
+import React from "react"
 
-    const [account, setAccount] = useState(false)
+const Navbar = () => {
+    return(
+        <div className="navigation">
+            <nav className="px-2 py-3 navbar-wrapper d-flex align-items-center justify-content-between">
+                <p className="m-0">
+                    <b>farrux__aktamov</b>
+                </p>
 
-    const toggle = () => setAccount(!account)
-    return( 
-       <div className="navigation">
-            <nav className="px-2 py-3 navbar-wrap d-flex align-items-center justify-content-between">
-            <p className="m-0" style={{cursor: "pointer"}} onClick={toggle}><b>farrux__aktamov {"⏷"}</b><span></span></p>
-
-            <div className="button_group">
-                <img src="/assets/icons/add-media.svg" className="mx-1" alt="" />
-                <img src="/assets/icons/burger.svg" className="mx-1" alt="" />
-            </div>
-            <Modal toggle={toggle} isOpen={account}>
-                <div className="accounts">
-                <div className="current__account d-flex align-items-center justify-content-between">
-                        <span>
-                        <img src="/assets/media/profile-photo.jpg" alt="" />
-                            <span className="ml-2">farrux__aktamov</span>
-                        </span>
-                        <div className="d-flex align-items-center justify-content-center "><b className="d-block text-dark">●</b></div>
+                <div className="button-group">
+                    <img className="mx-2" src="/assets/icons/add-media.svg" alt="" />
+                    <img className="mx-2" src="/assets/icons/burger.svg" alt="" />
                 </div>
-
-                <div className="add__account mt-2">
-                        <img src="/assets/icons/plus.svg" alt="" />
-                        <span className="ml-3">Add Account</span>
-                </div>
-                </div>
-            </Modal>
-        </nav>
-       </div>
+            </nav>
+        </div>
     )
 }
 export default Navbar

@@ -1,15 +1,15 @@
-import React from 'react';
-import Footer from '../components/Footer';
+import React from "react"
+import Footer from "../components/Footer"
 
 const Common = (props) => {
 
-    return (
+    return(
         <div className="wrapper">
             {props.children}
-
-            <Footer/>
+            
+            <Footer />
         </div>
-    );
-};
+    )
+}
 
-export default Common;
+export default Common

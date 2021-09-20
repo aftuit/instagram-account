@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Common from './Common.jsx';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getComments } from '../redux/actions/action.jsx';
+import { getComments } from '../redux/actions/action.js';
 import Slider from "react-slick";
 import { data } from '../tools/data.js';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Main from './Main';
-const Gallery = () => {
+const Tagged = () => {
     return (
         <Main>
             <div className="tag-content text-center mt-3 d-block">
@@ -12,5 +12,4 @@ const Gallery = () => {
     );
 };
 
-
-export default Gallery;
+export default Tagged;
